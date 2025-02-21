@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Mask Detection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Face Mask Detection</h1>
+        <p>Upload an image to detect if a person is wearing a mask.</p>
+        
+        <!-- Image upload form -->
+        <form id="imageForm" enctype="multipart/form-data">
+            <input type="file" id="imageUpload" name="image" accept="image/*" required />
+            <button type="submit">Upload and Detect</button>
+        </form>
+
+        <!-- Result display -->
+        <div id="result">
+            <h3>Detection Result:</h3>
+            <p id="prediction"></p>
+            <img id="resultImage" src="" alt="Result Image" />
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
